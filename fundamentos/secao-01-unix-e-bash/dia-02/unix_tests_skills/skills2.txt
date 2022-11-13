@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Zsh
+Git
+GitHub
+Eleanora
+Oi!
