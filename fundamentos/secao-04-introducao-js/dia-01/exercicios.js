@@ -10,3 +10,4 @@ if (numero1 > numero2) {
 } else {
     console.log("São iguais.")
 }
+
