@@ -4,9 +4,9 @@ let novo = 0;
 
 // Some todos os valores contidos no array e imprima o resultado;
 
-// for (let index = 0; index < numbers.length; index++) {
-//     novo += numbers[index];  
-// } console.log(novo);
+for (let index = 0; index < numbers.length; index++) {
+    novo += numbers[index];  
+} console.log(novo);
 
 for (let n of numbers) {
     novo += n;
