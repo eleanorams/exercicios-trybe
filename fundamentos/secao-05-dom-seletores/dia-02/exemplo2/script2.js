@@ -21,7 +21,6 @@ elementoOndeVoceEsta.appendChild(filhoOndeVoceEsta);
 // Crie um filho para primeiroFilhoDoFilho.
 
 const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
-
 const filhoDo1filho = document.createElement('section');
 filhoDo1filho.id = 'filhoDo1Filho';
 primeiroFilhoDoFilho.appendChild(filhoDo1filho);
