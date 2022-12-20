@@ -1,4 +1,3 @@
 ainda vou aprender.
-q
 
 
