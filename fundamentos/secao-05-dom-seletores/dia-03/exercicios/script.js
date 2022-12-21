@@ -55,28 +55,67 @@ const friday = () => {
   }
 };
 
-function createButton(Feriados) {
+// Parte 2
+// Implemente uma função que crie dinamicamente um botão com o nome “Feriados”;
+// Sua função deve receber um parâmetro com a string 'Feriados';
+// Adicione a este botão a ID "btn-holiday";
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container".
+// Parte 3
+// Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday";
+// Adicione ao botão "Feriados" um evento de "click" que altere a cor de fundo dos dias que possuem a classe "holiday".
+// De olho na dica 👀: É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial com a cor “rgb(238,238,238)”.
+
+const corFeriados = () => {
+  const captHoliday = document.getElementsByClassName("holiday");
+  for (let index = 0; index < captHoliday.length; index += 1) {
+    if (captHoliday[index].style.backgroundColor === "pink") {
+      captHoliday[index].style.backgroundColor = "unset";
+    } else {
+      captHoliday[index].style.backgroundColor = "pink";
+    }
+  }
+};
+
+// Parte 4
+// Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira";
+// Sua função deve receber como parâmetro a string “Sexta-feira”;
+// Adicione a esse botão o ID "btn-friday";
+// Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
+
+// Parte 5
+// Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira;
+// Adicione ao botão “Sexta-feira” um evento de “click” e modifique o texto a ser exibido nos dias que são sextas-feiras.
+// De olho na dica 👀: É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial exibindo os dias.
+const corSexta = () => {
+  const captFriday = document.getElementsByClassName("friday");
+  const arrayDeSextas = ["2", "9", "16", "23", "30"];
+
+  for (let index = 0; index < captFriday.length; index += 1) {
+    if (captFriday[index].innerText === "Sexta!!!") {
+      captFriday[index].innerText = arrayDeSextas[index];
+    } else {
+      captFriday[index].innerText = "Sexta!!!";
+    }
+  }
+};
+
+// Parte 6
+// Implemente duas funções que criem um efeito de “zoom”;
+// Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+
+//Criando Botão geral
+function createButton(Feriados, id, funçao) {
   const btnContainer = document.getElementsByClassName("buttons-container")[0];
   const botao = document.createElement("button");
-  botao.id = "btn-holiday";
+  botao.id = id;
   btnContainer.appendChild(botao);
   botao.innerHTML = Feriados;
-}
-
-// const changeHolidayColor = () => {
-//   const holidayButton = document.querySelectorAll(".holiday");
-//   const altColor = holidayButton[index].getElementsByClassName.backgroundColor;
-//   for (let index = 0; index < holidayButton.length; index += 1) {
-//     if (altColor === "#eee") {
-//       holidayButton[index].getElementsByClassName.backgroundColor = "yellow";
-//     } else {
-//       altColor = "#eee";
-//     }
-//   }
-// };
+  botao.addEventListener("click", funçao);
+};
 
 window.onload = () => {
   createDaysList();
-  createButton("Feriados");
+  createButton("Feriados", "btn-holiday", corFeriados);
+  createButton("Sexta-feira", "btn-friday", corSexta);
   changeHolidayColor();
 };
