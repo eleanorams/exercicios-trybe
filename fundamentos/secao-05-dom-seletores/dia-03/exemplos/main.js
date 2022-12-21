@@ -10,7 +10,7 @@ const myWebpage = document.getElementById("my-spotrybefy");
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 const changeTech = (event) => {
-  //1o passo: capturar o que tiver a classe teg, como só tem 1 coisa com isso, podemos usar o queryselector .tech pois é classe
+  //1o passo: capturar o que tiver a classe tech, como só tem 1 coisa com isso, podemos usar o queryselector -> .tech pois é classe
   const captTech = document.querySelector(".tech");
   captTech.classList.remove("tech");
   event.target.classList.add("tech");
