@@ -160,6 +160,14 @@ const setTaskClass = () => {
   });
 }
 
+// Parte 10
+// Implemente uma função que atribua a cor da tarefa ao dia do calendário;
+// Adicione um evento que, ao clicar em um dia do mês no calendário, atribua a esse dia a cor da legenda da sua tarefa selecionada;
+// Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119).
+
+
+
+
 //Criando Botão geral
 function createButton(Feriados, id, funçao) {
   const btnContainer = document.getElementsByClassName("buttons-container")[0];
