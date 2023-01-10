@@ -9,14 +9,12 @@ const saveContent = () => {
 };
 
 const returnContent = () => {
-    captBody.style.backgroundColor = localStorage.getItem('savebgColor');
-    captBody.style.color = localStorage.getItem('saveFontColor')
-    captBody.style.fontSize = localStorage.getItem('saveFontSize')
-    captBody.style.lineHeight = localStorage.getItem('saveLineHeight')
-    captBody.style.fontFamily = localStorage.getItem('saveFontFamily')
-}
-
-
+  captBody.style.backgroundColor = localStorage.getItem("savebgColor");
+  captBody.style.color = localStorage.getItem("saveFontColor");
+  captBody.style.fontSize = localStorage.getItem("saveFontSize");
+  captBody.style.lineHeight = localStorage.getItem("saveLineHeight");
+  captBody.style.fontFamily = localStorage.getItem("saveFontFamily");
+};
 
 const createh2 = () => {
   const createh2 = document.createElement("h2");
@@ -71,7 +69,6 @@ const corDeFundoBtn = (cor) => {
     captBody.style.backgroundColor = cor;
     saveContent();
   });
- 
 };
 
 const backgroundColor = () => {
