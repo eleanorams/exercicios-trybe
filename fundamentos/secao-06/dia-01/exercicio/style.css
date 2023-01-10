@@ -1,0 +1,23 @@
+header {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#informations{
+    display: block;
+}
+
+section {
+    border: 1px solid black;
+    height: 400px;
+    width: 600px;
+}
+
+.inputs {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#informations {
+    resize: none;
+}
