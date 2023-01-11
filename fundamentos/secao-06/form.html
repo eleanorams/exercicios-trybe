@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <title>Formulario-TrybeTrip</title>
+  </head>
+  <body>
+      <div class="text-center">
+    <h1 class="h1 text-bg-info p-3">Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
+    <form class="form-group">
+      <fieldset>
+        <div class="for-group mt-2">
+        <label for="fullName" class="form-label">Nome Completo:</label>
+        <input  class="form-control-sm" type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>  
+    </div>    
+    <div class="for-group mt-2">
+        <label for="email"class="form-label">Endereço de e-mail:</label>
+        <input class="form-control-sm" type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="50" minlength="10" required>
+    </div> 
+
+    <div class="for-group mt-2">
+        <label for="destination1" class="form-check-label"> Cidade</label>
+        <input type="radio" role="switch" id="destination1" class="form-check-input" name="destinations" value="Cidade" required>
+
+        <label for="destination2" class="form-check-label"> Campo</label>
+        <input type="radio" role="switch" id="destination2" class="form-check-input" name="destinations" value="Campo" required>
+
+        <label for="destination3" class="form-check-label" > Praia</label>
+        <input type="radio" role="switch" id="destination3" class="form-check-input" name="destinations" value="Praia" required>
+
+        <label for="destination4" class="form-check-label" > Montanhas</label>
+        <input type="radio" role="switch" id="destination4" class="form-check-input" name="destinations" value="Montanhas" required>
+    </div> 
+    <div class="for-group mt-2">
+        <label for="why" class="form-label">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso TrybeTrip?</label>
+        <br/>
+    </div>
+    <div class="for-group mt-2">
+        <textarea name="why" id="why" cols="60" rows="10" placeholder="Digite sua resposta vencedora aqui"></textarea>
+    </div>  
+        <br/>
+        <div class="for-group mt-2">
+        <label for="date" class="form-label">Qual a melhor data para realizar sua viagem?</label>
+        <input type="date" id="date">
+        <br/>
+    </div> 
+    <div class="for-group mt-2">
+        <label for="promo"class="form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+        <input type="checkbox" name="promo" id="promo" class="form-check-input">
+    </div> 
+    <div class="for-group mt-2">
+        <label for="agreement" class="form-check-label"> Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <input type="checkbox" name="agreement" id="agreement" required class="form-check-input">
+    </div> 
+      </fieldset>
+      <div class="for-group mt-2">
+      <button type="submit" id="submit-btn" class="btn btn-success">Participar do concurso TrybeTrip</button>
+      <button type="button" id="clear-btn" class="btn btn-danger">Apagar informações</button>
+    </div>
+    </form>
+</div>
+  </body>
+</html>
