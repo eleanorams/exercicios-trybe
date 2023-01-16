@@ -1,17 +1,40 @@
 html {
     box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
-  @media screen and (max-width: 600px) {
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 32px;
+        justify-content: center;
+    }
+
     ul {
         display: flex;
         flex-wrap: wrap;
         line-height: 32px;
+        gap: 16px;
+        flex-direction: column;
     }
+
+    .aside-one {
+        display: flex;
+        justify-content: center;
+    }
+
     .aside-two {
         display: flex;
         flex-wrap: wrap;
@@ -33,4 +56,10 @@ html {
         font-size: 16px;
         justify-content: center;
     }
-  }
+    
+    nav ul {
+ display: flex;
+ flex-direction: row;
+ list-style: none;
+    }
+}
