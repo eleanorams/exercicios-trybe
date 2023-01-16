@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 600px) {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 32px;
+    }
+    .aside-two {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 32px;
+        justify-content: center;
+    }
+
+    .main-content {
+        line-height: 32px;
+        margin: 16px;
+    }
+
+    h1 {
+        font-size: 20px
+    }
+
+    h2 {
+        display: flex;
+        font-size: 16px;
+        justify-content: center;
+    }
+  }
