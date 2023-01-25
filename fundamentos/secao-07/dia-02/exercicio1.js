@@ -67,7 +67,8 @@ const techList = (array, nome) => {
   }
   return arrayTecnologias;
 };
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript']));
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+
 const hydrate = (string) => {
   const splitString = string.split('');
   let glassesOfWater = 0;

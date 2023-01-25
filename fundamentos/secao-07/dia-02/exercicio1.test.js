@@ -19,14 +19,13 @@ describe('testa a função myFizzBuzz', () => {
   });
 });
 
-// Teste se as demais letras/números não são convertidos para cada caso;
 describe('testa a função mapString', () => {
   test('verifica se encode e decode são funções e se os números e vogais estão sendo convertidos corretamente', () => {
     expect(typeof encode && typeof decode).toBe('function');
     expect(encode('aeiou')).toBe('12345');
     expect(decode('12345')).toBe('aeiou');
-    expect(decode('12345')).not.toBe('aeioa'); 
-    expect(encode('aeiou')).not.toBe('12341');
+    expect(decode('12345')).not.toBe('aeio5'); 
+    expect(encode('aeiou')).not.toBe('12341u');
     expect(decode('trybe').length).toEqual(5);
     expect(decode('12345').length).toEqual(5);
   });
