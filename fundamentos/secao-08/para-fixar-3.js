@@ -34,5 +34,12 @@ const verifyAges = (arr, minimumAge) => {
     return arr.every((person) => person.age >= minimumAge);
   };
 
+  const verifyAge = (obj, ages1) => {
+    return obj.every((ages) => ages.age >= ages1);
+  };
+
 console.log(verifyAges(people, 18));
 console.log(verifyAges(people, 14));
+
+console.log(verifyAge(people, 18));
+console.log(verifyAge(people, 14));
