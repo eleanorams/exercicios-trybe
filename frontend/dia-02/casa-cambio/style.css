@@ -1,0 +1,95 @@
+body {
+  background-color: #282c33;
+  font-family: 'Fira Code';
+  font-style: normal;
+}
+
+h1 {
+  color: white;
+}
+p {
+  color: white;
+  font-size: 16px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+img {
+  position: absolute;
+  top: 63px;
+  left: 306px;
+}
+
+form {
+  position: absolute;
+  top: 150px;
+  left: 306px;
+}
+
+input {
+  position: absolute;
+  width: 171px;
+  height: 48px;
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 10px;
+}
+
+button {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 176px;
+  height: 55px;
+  left: 200px;
+  background: #96eb95;
+  border: 1px solid #96eb95;
+  border-radius: 10px;
+  color: #282c33;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-content: center;
+  max-width: 100vh;
+}
+
+#superContainer {
+  background: #35383F;
+  position: absolute;
+  top: 290px;
+  left: 306px;
+  width: 970px;
+  min-height: 600px;
+  border-radius: 20px;
+}
+
+#container > div {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 150px;
+  height: 44px;
+  left: 508px;
+  top: 372px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+#container > div > span {
+  color: #ffe713;
+}
